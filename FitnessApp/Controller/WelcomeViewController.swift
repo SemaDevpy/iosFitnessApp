@@ -14,12 +14,18 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.black]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         exercises = createArray()
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Select Workout"
         tableView.separatorStyle = .none
+        
     }
     
     
@@ -50,5 +56,19 @@ extension WelcomeViewController : UITableViewDataSource, UITableViewDelegate{
         cell.myImage.image = exercise.image
         cell.myLable.text = exercise.title
         return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0{
+            performSegue(withIdentifier: K.pullUpSegue, sender: self)
+        }else if indexPath.row == 1{
+            performSegue(withIdentifier: K.pushUpSegue, sender: self)
+        }else if indexPath.row == 2{
+            performSegue(withIdentifier: K.dipsSegue, sender: self)
+        }else{
+            performSegue(withIdentifier: K.squatsSegue, sender: self)
+        }
+        
     }
 }
