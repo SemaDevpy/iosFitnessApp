@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29010E6305CFB38275F6D9CD /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42EBD17D37D6B61C9F27DA /* Pods_FitnessApp.framework */; };
 		A2BD0F612577344200201B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F602577344200201B75 /* AppDelegate.swift */; };
 		A2BD0F632577344200201B75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F622577344200201B75 /* SceneDelegate.swift */; };
-		A2BD0F652577344200201B75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F642577344200201B75 /* ViewController.swift */; };
 		A2BD0F682577344200201B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2BD0F662577344200201B75 /* Main.storyboard */; };
 		A2BD0F6A2577344400201B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2BD0F692577344400201B75 /* Assets.xcassets */; };
 		A2BD0F6D2577344400201B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2BD0F6B2577344400201B75 /* LaunchScreen.storyboard */; };
+		A2BD0F792577351C00201B75 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F782577351C00201B75 /* Constants.swift */; };
+		A2BD0F7D25773FA200201B75 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F7C25773FA200201B75 /* WelcomeViewController.swift */; };
+		A2BD0F8125774A0400201B75 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F8025774A0400201B75 /* MyTableViewCell.swift */; };
+		A2BD0F8325774AFF00201B75 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F8225774AFF00201B75 /* Exercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		646003978C8F6EE8842D9D24 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9D42EBD17D37D6B61C9F27DA /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BD0F5D2577344200201B75 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BD0F602577344200201B75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2BD0F622577344200201B75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A2BD0F642577344200201B75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A2BD0F672577344200201B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2BD0F692577344400201B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2BD0F6C2577344400201B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2BD0F6E2577344400201B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2BD0F782577351C00201B75 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A2BD0F7C25773FA200201B75 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		A2BD0F8025774A0400201B75 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		A2BD0F8225774AFF00201B75 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		AA10EB4E2657249E7175D68C /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29010E6305CFB38275F6D9CD /* Pods_FitnessApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09DD4E5328049AA611E30059 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				646003978C8F6EE8842D9D24 /* Pods-FitnessApp.debug.xcconfig */,
+				AA10EB4E2657249E7175D68C /* Pods-FitnessApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		403D95D02A48893BD4D5D54F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D42EBD17D37D6B61C9F27DA /* Pods_FitnessApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2BD0F542577344200201B75 = {
 			isa = PBXGroup;
 			children = (
 				A2BD0F5F2577344200201B75 /* FitnessApp */,
 				A2BD0F5E2577344200201B75 /* Products */,
+				09DD4E5328049AA611E30059 /* Pods */,
+				403D95D02A48893BD4D5D54F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +89,48 @@
 			children = (
 				A2BD0F602577344200201B75 /* AppDelegate.swift */,
 				A2BD0F622577344200201B75 /* SceneDelegate.swift */,
-				A2BD0F642577344200201B75 /* ViewController.swift */,
-				A2BD0F662577344200201B75 /* Main.storyboard */,
-				A2BD0F692577344400201B75 /* Assets.xcassets */,
-				A2BD0F6B2577344400201B75 /* LaunchScreen.storyboard */,
+				A2BD0F76257734C700201B75 /* Model */,
+				A2BD0F75257734C000201B75 /* View */,
+				A2BD0F74257734B100201B75 /* Controller */,
+				A2BD0F772577350100201B75 /* Supporting Files */,
 				A2BD0F6E2577344400201B75 /* Info.plist */,
+				A2BD0F782577351C00201B75 /* Constants.swift */,
 			);
 			path = FitnessApp;
+			sourceTree = "<group>";
+		};
+		A2BD0F74257734B100201B75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A2BD0F7C25773FA200201B75 /* WelcomeViewController.swift */,
+				A2BD0F8025774A0400201B75 /* MyTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A2BD0F75257734C000201B75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2BD0F662577344200201B75 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2BD0F76257734C700201B75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2BD0F8225774AFF00201B75 /* Exercise.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2BD0F772577350100201B75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2BD0F692577344400201B75 /* Assets.xcassets */,
+				A2BD0F6B2577344400201B75 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2BD0F712577344400201B75 /* Build configuration list for PBXNativeTarget "FitnessApp" */;
 			buildPhases = (
+				1319F28E3BC9E90B6A1C9A51 /* [CP] Check Pods Manifest.lock */,
 				A2BD0F592577344200201B75 /* Sources */,
 				A2BD0F5A2577344200201B75 /* Frameworks */,
 				A2BD0F5B2577344200201B75 /* Resources */,
+				EECC4F051DDAD66D4022DAB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +201,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1319F28E3BC9E90B6A1C9A51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitnessApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EECC4F051DDAD66D4022DAB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitnessApp/Pods-FitnessApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitnessApp/Pods-FitnessApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FitnessApp/Pods-FitnessApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2BD0F592577344200201B75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2BD0F652577344200201B75 /* ViewController.swift in Sources */,
 				A2BD0F612577344200201B75 /* AppDelegate.swift in Sources */,
+				A2BD0F7D25773FA200201B75 /* WelcomeViewController.swift in Sources */,
 				A2BD0F632577344200201B75 /* SceneDelegate.swift in Sources */,
+				A2BD0F8125774A0400201B75 /* MyTableViewCell.swift in Sources */,
+				A2BD0F792577351C00201B75 /* Constants.swift in Sources */,
+				A2BD0F8325774AFF00201B75 /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +395,7 @@
 		};
 		A2BD0F722577344400201B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 646003978C8F6EE8842D9D24 /* Pods-FitnessApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +413,7 @@
 		};
 		A2BD0F732577344400201B75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA10EB4E2657249E7175D68C /* Pods-FitnessApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
