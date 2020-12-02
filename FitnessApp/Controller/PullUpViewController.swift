@@ -17,11 +17,7 @@ class PullUpViewController: UIViewController {
         super.viewDidLoad()
         train.applyDesign()
         statistics.applyDesign()
-        
-        pullUpImage.layer.cornerRadius = 15
-        pullUpImage.clipsToBounds = true
-        pullUpImage.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        
+        pullUpImage.applyDesignForImage()
         
         
         self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
@@ -35,5 +31,13 @@ extension UIButton{
         self.layer.shadowRadius = 5
         self.layer.shadowOpacity = 0.8
         self.layer.shadowOffset = CGSize(width: 0, height: 0)
+    }
+}
+
+extension UIImageView{
+    func applyDesignForImage(){
+        self.layer.cornerRadius = 15
+        self.clipsToBounds = true
+        self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
     }
 }
