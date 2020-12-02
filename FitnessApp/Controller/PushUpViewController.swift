@@ -10,10 +10,15 @@ import UIKit
 
 class PushUpViewController: UIViewController {
 
+    @IBOutlet weak var trainButton: UIButton!
+    @IBOutlet weak var statisticsButton: UIButton!
+    @IBOutlet weak var pushupsImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        trainButton.applyDesign()
+        statisticsButton.applyDesign()
+        pushupsImage.applyDesignForImage()
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
     }
     
 

@@ -163,18 +163,62 @@
         <!--Push Ups-->
         <scene sceneID="LT6-ax-uM7">
             <objects>
-                <viewController id="m6O-Lb-5ud" sceneMemberID="viewController">
+                <viewController id="m6O-Lb-5ud" customClass="PushUpViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="esd-XF-CaS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-vX-KBr">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="r9N-S5-cfS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
+                                <state key="normal" title="Statistics">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deR-3E-0pD">
+                                <rect key="frame" x="20" y="727" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5fS-G4-apH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
+                                <state key="normal" title="Train">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="hvC-aI-8dV">
+                                <rect key="frame" x="0.0" y="140" width="414" height="547"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xGz-vX-KBr" firstAttribute="leading" secondItem="7qg-kZ-xGb" secondAttribute="leading" constant="20" id="8XU-nk-yi8"/>
+                            <constraint firstItem="hvC-aI-8dV" firstAttribute="trailing" secondItem="7qg-kZ-xGb" secondAttribute="trailing" id="9jP-3C-DxT"/>
+                            <constraint firstItem="7qg-kZ-xGb" firstAttribute="trailing" secondItem="deR-3E-0pD" secondAttribute="trailing" constant="20" id="BwZ-pM-gV0"/>
+                            <constraint firstItem="xGz-vX-KBr" firstAttribute="bottom" secondItem="7qg-kZ-xGb" secondAttribute="bottom" constant="-20" id="TYa-OK-NUa"/>
+                            <constraint firstItem="deR-3E-0pD" firstAttribute="top" secondItem="hvC-aI-8dV" secondAttribute="bottom" constant="40" id="Xug-fP-hEg"/>
+                            <constraint firstItem="hvC-aI-8dV" firstAttribute="top" secondItem="7qg-kZ-xGb" secondAttribute="top" id="eqW-Tz-hPK"/>
+                            <constraint firstItem="xGz-vX-KBr" firstAttribute="top" secondItem="deR-3E-0pD" secondAttribute="bottom" constant="15" id="oXz-Ca-vVL"/>
+                            <constraint firstItem="7qg-kZ-xGb" firstAttribute="trailing" secondItem="xGz-vX-KBr" secondAttribute="trailing" constant="20" id="ru8-JT-fFR"/>
+                            <constraint firstItem="hvC-aI-8dV" firstAttribute="leading" secondItem="7qg-kZ-xGb" secondAttribute="leading" id="s5E-zj-g5K"/>
+                            <constraint firstItem="deR-3E-0pD" firstAttribute="leading" secondItem="7qg-kZ-xGb" secondAttribute="leading" constant="20" id="xoA-rz-rwd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7qg-kZ-xGb"/>
                     </view>
                     <navigationItem key="navigationItem" title="Push Ups" id="g5H-Aw-Wah"/>
+                    <connections>
+                        <outlet property="pushupsImage" destination="hvC-aI-8dV" id="Oft-yH-7JQ"/>
+                        <outlet property="statisticsButton" destination="xGz-vX-KBr" id="qu9-aF-G6L"/>
+                        <outlet property="trainButton" destination="deR-3E-0pD" id="GrX-GK-nrE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKe-O3-MDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423" y="856"/>
+            <point key="canvasLocation" x="-423.1884057971015" y="855.80357142857144"/>
         </scene>
         <!--Pull Ups-->
         <scene sceneID="v23-do-nEy">
@@ -269,6 +313,7 @@
     </scenes>
     <resources>
         <image name="dipsssy" width="640" height="640"/>
+        <image name="girl" width="338" height="397"/>
         <image name="girl-doing-pull-ups-wallpaper" width="2880" height="3840"/>
     </resources>
 </document>
