@@ -20,6 +20,7 @@
 		A2BD0F85257781A200201B75 /* PullUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F84257781A200201B75 /* PullUpViewController.swift */; };
 		A2BD0F872577B64300201B75 /* DipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F862577B64300201B75 /* DipsViewController.swift */; };
 		A2BD0F892577B86500201B75 /* PushUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F882577B86500201B75 /* PushUpViewController.swift */; };
+		A2BD0F8B2577BC7B00201B75 /* SquatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F8A2577BC7B00201B75 /* SquatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		A2BD0F84257781A200201B75 /* PullUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullUpViewController.swift; sourceTree = "<group>"; };
 		A2BD0F862577B64300201B75 /* DipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DipsViewController.swift; sourceTree = "<group>"; };
 		A2BD0F882577B86500201B75 /* PushUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpViewController.swift; sourceTree = "<group>"; };
+		A2BD0F8A2577BC7B00201B75 /* SquatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatsViewController.swift; sourceTree = "<group>"; };
 		AA10EB4E2657249E7175D68C /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 				A2BD0F772577350100201B75 /* Supporting Files */,
 				A2BD0F6E2577344400201B75 /* Info.plist */,
 				A2BD0F782577351C00201B75 /* Constants.swift */,
+				A2BD0F8025774A0400201B75 /* MyTableViewCell.swift */,
 			);
 			path = FitnessApp;
 			sourceTree = "<group>";
@@ -108,10 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				A2BD0F7C25773FA200201B75 /* WelcomeViewController.swift */,
-				A2BD0F8025774A0400201B75 /* MyTableViewCell.swift */,
 				A2BD0F84257781A200201B75 /* PullUpViewController.swift */,
 				A2BD0F862577B64300201B75 /* DipsViewController.swift */,
 				A2BD0F882577B86500201B75 /* PushUpViewController.swift */,
+				A2BD0F8A2577BC7B00201B75 /* SquatsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				A2BD0F792577351C00201B75 /* Constants.swift in Sources */,
 				A2BD0F8325774AFF00201B75 /* Exercise.swift in Sources */,
 				A2BD0F892577B86500201B75 /* PushUpViewController.swift in Sources */,
+				A2BD0F8B2577BC7B00201B75 /* SquatsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
