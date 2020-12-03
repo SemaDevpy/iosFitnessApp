@@ -73,15 +73,15 @@
                     <navigationItem key="navigationItem" title="Select Workout" id="Sdy-Lj-RZN"/>
                     <connections>
                         <outlet property="tableView" destination="9qk-TU-LVa" id="bcW-D3-LF9"/>
-                        <segue destination="Khj-KB-0I3" kind="show" identifier="goToPullUps" id="k9H-pX-uUb"/>
                         <segue destination="m6O-Lb-5ud" kind="show" identifier="goToPushUps" id="bTX-hm-WTT"/>
                         <segue destination="vAy-kn-E5K" kind="show" identifier="goToDips" id="iRt-8u-w7i"/>
                         <segue destination="4dS-oX-80W" kind="show" identifier="goToSquats" id="NYA-BU-Edc"/>
+                        <segue destination="Khj-KB-0I3" kind="show" identifier="goToPullUps" id="QQO-hg-pcK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qf-Xd-Koz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423.1884057971015" y="-44.196428571428569"/>
+            <point key="canvasLocation" x="-177" y="-40"/>
         </scene>
         <!--Dips-->
         <scene sceneID="ttz-OA-QDc">
@@ -110,7 +110,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="yUG-l4-IHj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
-                                <state key="normal" title="Train">
+                                <state key="normal" title="Training">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -142,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eV2-cy-K0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666.66666666666674" y="-136.60714285714286"/>
+            <point key="canvasLocation" x="257" y="818"/>
         </scene>
         <!--Squats-->
         <scene sceneID="77J-NU-Qaa">
@@ -171,7 +171,7 @@
                                     <constraint firstAttribute="height" constant="50" id="D22-1V-Z8u"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
-                                <state key="normal" title="Train">
+                                <state key="normal" title="Training">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -203,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0u-eO-cgz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666.66666666666674" y="575.89285714285711"/>
+            <point key="canvasLocation" x="-662" y="818"/>
         </scene>
         <!--Push Ups-->
         <scene sceneID="LT6-ax-uM7">
@@ -231,9 +231,12 @@
                                     <constraint firstAttribute="height" constant="50" id="5fS-G4-apH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
-                                <state key="normal" title="Train">
+                                <state key="normal" title="Training">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wZy-ml-r1S" kind="show" id="OYw-6A-D5F"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="hvC-aI-8dV">
                                 <rect key="frame" x="0.0" y="140" width="414" height="547"/>
@@ -263,7 +266,192 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKe-O3-MDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423.1884057971015" y="855.80357142857144"/>
+            <point key="canvasLocation" x="-1596" y="818"/>
+        </scene>
+        <!--Push Up Info View Controller-->
+        <scene sceneID="kbo-qn-hYl">
+            <objects>
+                <viewController id="wZy-ml-r1S" customClass="PushUpInfoViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QAP-9F-3AP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJj-sT-aQm">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.89824694400000005" green="0.77491778140000001" blue="0.71056395770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ef2-hU-JNb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="25"/>
+                                <state key="normal" title="Change Week">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuV-Iz-wOU">
+                                <rect key="frame" x="20" y="727" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.89824694400000005" green="0.77491778140000001" blue="0.71056395770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EFx-V5-zL5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="25"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBtnTapped:" destination="wZy-ml-r1S" eventType="touchUpInside" id="zVZ-dc-bVm"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sih-hm-KMn">
+                                <rect key="frame" x="20" y="133" width="374" height="310"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oEZ-9l-sIx">
+                                        <rect key="frame" x="8" y="154" width="358" height="2"/>
+                                        <color key="progressTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress for this week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2u-vH-Mfd">
+                                        <rect key="frame" x="8" y="95" width="201" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="201" id="cnv-7y-a0v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 10 12 10 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSF-EU-aVg">
+                                        <rect key="frame" x="8" y="278" width="201" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="201" id="cvZ-Xu-SvB"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="k8A-mn-wPd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="54" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uip-d2-hLa">
+                                        <rect key="frame" x="316" y="278" width="50" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Pnc-iJ-PGO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sets for today:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nca-ic-rlf">
+                                        <rect key="frame" x="8" y="234" width="200" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="xCC-hR-CmU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXm-c7-yEZ">
+                                        <rect key="frame" x="306" y="234" width="60" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="FDr-YL-ZdY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="uip-d2-hLa" firstAttribute="top" secondItem="qXm-c7-yEZ" secondAttribute="bottom" constant="20" id="1CD-lh-GbI"/>
+                                    <constraint firstAttribute="bottom" secondItem="uip-d2-hLa" secondAttribute="bottom" constant="8" id="5QH-Mx-uE6"/>
+                                    <constraint firstAttribute="bottom" secondItem="bSF-EU-aVg" secondAttribute="bottom" constant="8" id="HLC-ny-yca"/>
+                                    <constraint firstAttribute="trailing" secondItem="oEZ-9l-sIx" secondAttribute="trailing" constant="8" id="I5L-wU-ANU"/>
+                                    <constraint firstItem="oEZ-9l-sIx" firstAttribute="centerX" secondItem="Sih-hm-KMn" secondAttribute="centerX" id="LLd-Fu-Os5"/>
+                                    <constraint firstItem="oEZ-9l-sIx" firstAttribute="centerY" secondItem="Sih-hm-KMn" secondAttribute="centerY" id="OWh-0g-0pg"/>
+                                    <constraint firstAttribute="trailing" secondItem="uip-d2-hLa" secondAttribute="trailing" constant="8" id="RiV-MX-HTU"/>
+                                    <constraint firstItem="bSF-EU-aVg" firstAttribute="leading" secondItem="Sih-hm-KMn" secondAttribute="leading" constant="8" id="T1f-nh-A5z"/>
+                                    <constraint firstAttribute="height" constant="310" id="Y9L-3d-2A2"/>
+                                    <constraint firstItem="oEZ-9l-sIx" firstAttribute="top" secondItem="q2u-vH-Mfd" secondAttribute="bottom" constant="35" id="pWL-qo-yDS"/>
+                                    <constraint firstItem="q2u-vH-Mfd" firstAttribute="leading" secondItem="Sih-hm-KMn" secondAttribute="leading" constant="8" id="raD-o9-3F5"/>
+                                    <constraint firstAttribute="trailing" secondItem="qXm-c7-yEZ" secondAttribute="trailing" constant="8" id="vTK-lS-Auv"/>
+                                    <constraint firstItem="bSF-EU-aVg" firstAttribute="top" secondItem="nca-ic-rlf" secondAttribute="bottom" constant="20" id="wFn-wN-Glx"/>
+                                    <constraint firstItem="nca-ic-rlf" firstAttribute="leading" secondItem="Sih-hm-KMn" secondAttribute="leading" constant="8" id="yUP-u6-8vW"/>
+                                    <constraint firstItem="oEZ-9l-sIx" firstAttribute="leading" secondItem="Sih-hm-KMn" secondAttribute="leading" constant="8" id="zv2-FV-6yQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sih-hm-KMn" firstAttribute="top" secondItem="q4J-P9-laN" secondAttribute="top" constant="45" id="2ik-q1-XwK"/>
+                            <constraint firstItem="JuV-Iz-wOU" firstAttribute="leading" secondItem="q4J-P9-laN" secondAttribute="leading" constant="20" id="6Kg-cm-LvI"/>
+                            <constraint firstItem="bJj-sT-aQm" firstAttribute="leading" secondItem="q4J-P9-laN" secondAttribute="leading" constant="20" id="F5w-cW-aWu"/>
+                            <constraint firstItem="Sih-hm-KMn" firstAttribute="leading" secondItem="q4J-P9-laN" secondAttribute="leading" constant="20" id="HY8-J8-mcz"/>
+                            <constraint firstItem="bJj-sT-aQm" firstAttribute="bottom" secondItem="q4J-P9-laN" secondAttribute="bottom" constant="-20" id="OZb-F5-A1G"/>
+                            <constraint firstItem="q4J-P9-laN" firstAttribute="trailing" secondItem="Sih-hm-KMn" secondAttribute="trailing" constant="20" id="SVn-ry-vo5"/>
+                            <constraint firstItem="q4J-P9-laN" firstAttribute="trailing" secondItem="bJj-sT-aQm" secondAttribute="trailing" constant="20" id="aRR-Em-Dnh"/>
+                            <constraint firstItem="q4J-P9-laN" firstAttribute="trailing" secondItem="JuV-Iz-wOU" secondAttribute="trailing" constant="20" id="au1-3t-mAa"/>
+                            <constraint firstItem="bJj-sT-aQm" firstAttribute="top" secondItem="JuV-Iz-wOU" secondAttribute="bottom" constant="15" id="zfh-Lj-PiM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q4J-P9-laN"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="CP2-gI-AZb"/>
+                    <connections>
+                        <outlet property="changeWeekBtn" destination="bJj-sT-aQm" id="WLt-bj-p0C"/>
+                        <outlet property="infoLabel" destination="Sih-hm-KMn" id="QSg-Lt-t6D"/>
+                        <outlet property="progressBar" destination="oEZ-9l-sIx" id="7mk-2g-Pwf"/>
+                        <outlet property="setsLabel" destination="bSF-EU-aVg" id="uyP-lA-OC1"/>
+                        <outlet property="startBtn" destination="JuV-Iz-wOU" id="zEU-OC-H8z"/>
+                        <outlet property="totalRepsLabel" destination="uip-d2-hLa" id="022-hT-1Ko"/>
+                        <segue destination="q2k-Px-EH9" kind="show" identifier="startTraining" id="nC3-gD-vMb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUJ-K5-nU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1597.1014492753625" y="1630.5803571428571"/>
+        </scene>
+        <!--Start Push Up View Controller-->
+        <scene sceneID="NUv-eL-uhU">
+            <objects>
+                <viewController id="q2k-Px-EH9" customClass="StartPushUpViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="87l-cv-F1d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 30 30 20 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3L-gx-IA0">
+                                <rect key="frame" x="20" y="103" width="201" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="rsn-YI-OKv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjP-yX-U4m">
+                                <rect key="frame" x="47" y="288" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="6sR-vz-DNZ"/>
+                                    <constraint firstAttribute="height" constant="320" id="cKQ-Mq-5pR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="250"/>
+                                <state key="normal" title="10">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JjP-yX-U4m" firstAttribute="centerX" secondItem="87l-cv-F1d" secondAttribute="centerX" id="8xR-3f-9p5"/>
+                            <constraint firstItem="N3L-gx-IA0" firstAttribute="top" secondItem="2FW-OF-khO" secondAttribute="top" constant="15" id="Cvp-Xa-wkv"/>
+                            <constraint firstItem="N3L-gx-IA0" firstAttribute="leading" secondItem="2FW-OF-khO" secondAttribute="leading" constant="20" id="aL4-k3-Vjn"/>
+                            <constraint firstItem="JjP-yX-U4m" firstAttribute="centerY" secondItem="87l-cv-F1d" secondAttribute="centerY" id="nKj-S3-R3d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2FW-OF-khO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kQQ-yk-isn"/>
+                    <connections>
+                        <outlet property="btn" destination="JjP-yX-U4m" id="TwT-Ci-bH1"/>
+                        <outlet property="repsLabel" destination="N3L-gx-IA0" id="nHn-JW-QTi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAP-1n-1zn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1597.1014492753625" y="2335.7142857142858"/>
         </scene>
         <!--Pull Ups-->
         <scene sceneID="v23-do-nEy">
@@ -295,7 +483,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Train"/>
+                                <state key="normal" title="Training"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
@@ -327,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3k-A2-6r5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653.62318840579712" y="-879.24107142857144"/>
+            <point key="canvasLocation" x="1157" y="818"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rmr-ak-mkb">
@@ -338,6 +526,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                         </textAttributes>
@@ -353,7 +542,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhE-id-ITP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1330.4347826086957" y="-44.196428571428569"/>
+            <point key="canvasLocation" x="-178" y="-788"/>
         </scene>
     </scenes>
     <resources>
