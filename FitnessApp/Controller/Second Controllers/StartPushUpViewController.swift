@@ -10,20 +10,22 @@ import UIKit
 
 class StartPushUpViewController: UIViewController {
     
-    var countDown = 5
+    var countDown = 2
     var timer = Timer()
-
+    
     var reps = [Int]()
     
-    var listIncrementer = 0
+
     var numberOfReps = 0
     var numTracker = 0
+    
     
     @IBOutlet weak var btn: UIButton!
     @IBOutlet weak var repsLabel: UILabel!
     @IBOutlet weak var currentLabel: UILabel!
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var statusLbl: UILabel!
+    @IBOutlet weak var completedBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +37,10 @@ class StartPushUpViewController: UIViewController {
         numberOfReps = reps[numTracker]
         currentLabel.text = "Current: \(numberOfReps)"
         btn.setTitle("\(numberOfReps)", for: .normal)
-
+        
     }
     
-
+    
     @IBAction func btnTapped(_ sender: UIButton) {
         statusLbl.isHidden = true
         if numberOfReps >= 2{
@@ -53,7 +55,14 @@ class StartPushUpViewController: UIViewController {
             }else{
                 statusLbl.isHidden = false
                 btn.setTitle("!", for: .normal)
-                 statusLbl.text = "Workout is complete"
+                statusLbl.text = "Workout is complete"
+                completedBtn.isHidden = false
+//                if  pushUpInfoVC.numberOfRepeatOfWeek <= 3{
+//                    pushUpInfoVC.numberOfRepeatOfWeek += 1
+//                }else{
+//                    pushUpInfoVC.weekNum += 1
+//                    pushUpInfoVC.numberOfRepeatOfWeek = 0
+//                }
             }
         }
     }
@@ -71,8 +80,36 @@ class StartPushUpViewController: UIViewController {
             statusLbl.isHidden = false
             btn.setTitle("!", for: .normal)
             statusLbl.text = "Workout is complete"
+            completedBtn.isHidden = false
+            
+//            if  pushUpInfoVC.numberOfRepeatOfWeek <= 3{
+//                pushUpInfoVC.numberOfRepeatOfWeek += 1
+//
+//            }else{
+//                pushUpInfoVC.weekNum += 1
+//                pushUpInfoVC.numberOfRepeatOfWeek = 0
+//
+//            }
         }
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let desinationVC = segue.destination as! PushUpInfoViewController
+        
+        if desinationVC.numberOfRepeatOfWeek <= 1{
+            desinationVC.numberOfRepeatOfWeek += 1
+        }else{
+            if desinationVC.weekNum <= 4{
+                desinationVC.weekNum += 1
+                desinationVC.numberOfRepeatOfWeek = 0
+            }else{
+                desinationVC.weekNum = 0
+            }
+            
+        }
+    }
+    
     
     
     
@@ -89,7 +126,7 @@ class StartPushUpViewController: UIViewController {
             timer.invalidate()
             statusLbl.isHidden = true
             btn.setTitle("\(numberOfReps)", for: .normal)
-            countDown = 5
+            countDown = 2
             btn.isEnabled = true
             doneBtn.isEnabled = true
         }
@@ -101,10 +138,10 @@ class StartPushUpViewController: UIViewController {
     
     //MARK: - UI code
     func stringArray() -> String{
-           var list = ""
-           for num in reps{
-               list.append(" \(num)")
-           }
-           return list
-       }
+        var list = ""
+        for num in reps{
+            list.append(" \(num)")
+        }
+        return list
+    }
 }
