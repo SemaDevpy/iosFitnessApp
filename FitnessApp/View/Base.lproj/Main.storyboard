@@ -414,11 +414,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 30 30 20 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3L-gx-IA0">
-                                <rect key="frame" x="20" y="103" width="201" height="33"/>
+                                <rect key="frame" x="20" y="103" width="154.5" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="rsn-YI-OKv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="rsn-YI-OKv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -432,13 +432,45 @@
                                 <state key="normal" title="10">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnTapped:" destination="q2k-Px-EH9" eventType="touchUpInside" id="cLj-LM-ttx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zd-Lq-6kx">
+                                <rect key="frame" x="276" y="103" width="130" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="a0d-fX-8GC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlU-YR-Z9s">
+                                <rect key="frame" x="0.0" y="846" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89824694400000005" green="0.77491778140000001" blue="0.71056395770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DpZ-EC-rWu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="25"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneBtnTapped:" destination="q2k-Px-EH9" eventType="touchUpInside" id="QJT-tJ-T5C"/>
+                                    <action selector="startBtnTapped:" destination="wZy-ml-r1S" eventType="touchUpInside" id="thF-QQ-zkL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JjP-yX-U4m" firstAttribute="centerX" secondItem="87l-cv-F1d" secondAttribute="centerX" id="8xR-3f-9p5"/>
                             <constraint firstItem="N3L-gx-IA0" firstAttribute="top" secondItem="2FW-OF-khO" secondAttribute="top" constant="15" id="Cvp-Xa-wkv"/>
+                            <constraint firstItem="2FW-OF-khO" firstAttribute="trailing" secondItem="9Zd-Lq-6kx" secondAttribute="trailing" constant="8" id="Gum-Yt-hA2"/>
+                            <constraint firstItem="RlU-YR-Z9s" firstAttribute="trailing" secondItem="2FW-OF-khO" secondAttribute="trailing" id="Sqt-hs-RZn"/>
+                            <constraint firstItem="9Zd-Lq-6kx" firstAttribute="top" secondItem="2FW-OF-khO" secondAttribute="top" constant="15" id="UhI-52-x05"/>
                             <constraint firstItem="N3L-gx-IA0" firstAttribute="leading" secondItem="2FW-OF-khO" secondAttribute="leading" constant="20" id="aL4-k3-Vjn"/>
+                            <constraint firstItem="RlU-YR-Z9s" firstAttribute="leading" secondItem="2FW-OF-khO" secondAttribute="leading" id="lNi-ch-N75"/>
+                            <constraint firstAttribute="bottom" secondItem="RlU-YR-Z9s" secondAttribute="bottom" id="mV5-j2-ePw"/>
                             <constraint firstItem="JjP-yX-U4m" firstAttribute="centerY" secondItem="87l-cv-F1d" secondAttribute="centerY" id="nKj-S3-R3d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2FW-OF-khO"/>
@@ -446,6 +478,8 @@
                     <navigationItem key="navigationItem" id="kQQ-yk-isn"/>
                     <connections>
                         <outlet property="btn" destination="JjP-yX-U4m" id="TwT-Ci-bH1"/>
+                        <outlet property="currentLabel" destination="9Zd-Lq-6kx" id="JYh-j2-Ema"/>
+                        <outlet property="doneBtn" destination="RlU-YR-Z9s" id="QIA-im-VI6"/>
                         <outlet property="repsLabel" destination="N3L-gx-IA0" id="nHn-JW-QTi"/>
                     </connections>
                 </viewController>

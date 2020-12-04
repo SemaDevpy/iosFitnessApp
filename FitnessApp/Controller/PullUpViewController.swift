@@ -24,6 +24,9 @@ class PullUpViewController: UIViewController {
     }
 }
 
+
+
+
 extension UIButton{
     func applyDesign(){
         self.layer.cornerRadius = 15
