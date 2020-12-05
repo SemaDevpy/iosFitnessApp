@@ -404,7 +404,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUJ-K5-nU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1597.1014492753625" y="1630.5803571428571"/>
+            <point key="canvasLocation" x="-2657" y="1625"/>
         </scene>
         <!--Start Push Up View Controller-->
         <scene sceneID="NUv-eL-uhU">
@@ -520,7 +520,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAP-1n-1zn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="eef-Sa-knS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1597.1014492753625" y="2335.7142857142858"/>
+            <point key="canvasLocation" x="-2658" y="2476"/>
         </scene>
         <!--Pull Ups-->
         <scene sceneID="v23-do-nEy">

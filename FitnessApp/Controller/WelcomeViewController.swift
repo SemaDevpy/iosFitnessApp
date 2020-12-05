@@ -19,13 +19,12 @@ class WelcomeViewController: UIViewController {
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.black]
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         exercises = createArray()
-        navigationController?.navigationBar.prefersLargeTitles = true
+//        navigationController?.navigationBar.prefersLargeTitles = true
         title = "Select Workout"
-        tableView.separatorStyle = .none
-        
     }
     
     
@@ -69,6 +68,6 @@ extension WelcomeViewController : UITableViewDataSource, UITableViewDelegate{
         }else{
             performSegue(withIdentifier: K.squatsSegue, sender: self)
         }
-        
     }
+    
 }

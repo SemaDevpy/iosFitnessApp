@@ -23,6 +23,7 @@ class PushUpInfoViewController: UIViewController {
     
     let workoutProgramm = WorkoutProgramm(weekOne: [20,20,15,15,10], weekTwo: [25,25,20,15,10], weekThree: [30,30,25,20,15], weekFour: [35,30,25,20,15], weekFive: [40,35,25,25,15])
     
+    
     var weekNum = 0
     
     var numberOfRepeatOfWeek = 0
@@ -43,6 +44,7 @@ class PushUpInfoViewController: UIViewController {
             return workoutProgramm.weekOne
         }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,9 +85,6 @@ class PushUpInfoViewController: UIViewController {
     
     
     @IBAction func startBtnTapped(_ sender: Any) {
-        print(weekNum)
-        print(numberOfRepeatOfWeek)
-        print(week)
         performSegue(withIdentifier: K.trainingSegue, sender: self)
         
     }
@@ -145,7 +144,7 @@ class PushUpInfoViewController: UIViewController {
 //MARK: - Extending UIprogressView
 extension UIProgressView{
     func applyDesign(){
-        self.transform = self.transform.scaledBy(x: 1, y: 10)
+        self.transform = self.transform.scaledBy(x: 1, y: 10) //giving the height to progress bar
         self.layer.cornerRadius = 10
         self.clipsToBounds = true
     }

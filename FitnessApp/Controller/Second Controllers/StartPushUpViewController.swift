@@ -10,7 +10,7 @@ import UIKit
 
 class StartPushUpViewController: UIViewController {
     
-    var countDown = 1
+    var countDown = 60
     var timer = Timer()
     
     var reps = [Int]()
@@ -30,6 +30,7 @@ class StartPushUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         repsLabel.text = stringArray()
+        
         btn.layer.masksToBounds = true
         btn.layer.cornerRadius = btn.frame.width/2
         btn.backgroundColor = .gray
@@ -57,12 +58,6 @@ class StartPushUpViewController: UIViewController {
                 btn.setTitle("!", for: .normal)
                 statusLbl.text = "Workout is complete"
                 completedBtn.isHidden = false
-//                if  pushUpInfoVC.numberOfRepeatOfWeek <= 3{
-//                    pushUpInfoVC.numberOfRepeatOfWeek += 1
-//                }else{
-//                    pushUpInfoVC.weekNum += 1
-//                    pushUpInfoVC.numberOfRepeatOfWeek = 0
-//                }
             }
         }
     }
@@ -81,15 +76,6 @@ class StartPushUpViewController: UIViewController {
             btn.setTitle("!", for: .normal)
             statusLbl.text = "Workout is complete"
             completedBtn.isHidden = false
-            
-//            if  pushUpInfoVC.numberOfRepeatOfWeek <= 3{
-//                pushUpInfoVC.numberOfRepeatOfWeek += 1
-//
-//            }else{
-//                pushUpInfoVC.weekNum += 1
-//                pushUpInfoVC.numberOfRepeatOfWeek = 0
-//
-//            }
         }
     }
     
@@ -100,11 +86,12 @@ class StartPushUpViewController: UIViewController {
         if desinationVC.numberOfRepeatOfWeek <= 1{
             desinationVC.numberOfRepeatOfWeek += 1
         }else{
-            if desinationVC.weekNum <= 4{
+            if desinationVC.weekNum <= 3{
                 desinationVC.weekNum += 1
                 desinationVC.numberOfRepeatOfWeek = 0
             }else{
                 desinationVC.weekNum = 0
+                desinationVC.numberOfRepeatOfWeek = 0
             }
             
         }
@@ -126,7 +113,7 @@ class StartPushUpViewController: UIViewController {
             timer.invalidate()
             statusLbl.isHidden = true
             btn.setTitle("\(numberOfReps)", for: .normal)
-            countDown = 2
+            countDown = 60
             btn.isEnabled = true
             doneBtn.isEnabled = true
         }
