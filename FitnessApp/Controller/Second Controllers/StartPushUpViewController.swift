@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import RealmSwift
 
 class StartPushUpViewController: UIViewController {
     
-    var countDown = 60
+    let realm = try! Realm()
+    
+    var countDown = 2
     var timer = Timer()
     
     var reps = [Int]()
     
-
+    var totalPushUpsPerDay = ""
+    
     var numberOfReps = 0
     var numTracker = 0
     
@@ -95,6 +99,37 @@ class StartPushUpViewController: UIViewController {
             }
             
         }
+        
+        
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.timeZone = .current
+        formatter.locale = .current
+        formatter.dateFormat = "MM/dd/yyyy"
+        let dateString = formatter.string(from: date)
+        
+        
+        //MARK: - Creating new progress or Updating current,CREATE and UPDATE
+        //for one day there should be only one note
+        let prevProgressions = realm.objects(Progression.self).filter("date == %@" , dateString)
+        if !prevProgressions.isEmpty{
+            do{
+                try realm.write{
+                    prevProgressions[0].weekNumber = desinationVC.weekNum
+                    prevProgressions[0].numberOfRepeat = desinationVC.numberOfRepeatOfWeek
+                    prevProgressions[0].totalPushUps =  prevProgressions[0].totalPushUps + Int(totalPushUpsPerDay)!
+                }
+            }catch{
+                print("error in updating\(error)")
+            }
+        }else{
+            let progress = Progression()
+            progress.numberOfRepeat = desinationVC.numberOfRepeatOfWeek
+            progress.date = dateString
+            progress.weekNumber = desinationVC.weekNum
+            progress.totalPushUps = Int(totalPushUpsPerDay)!
+            saveProgress(progress: progress)
+        }
     }
     
     
@@ -113,7 +148,7 @@ class StartPushUpViewController: UIViewController {
             timer.invalidate()
             statusLbl.isHidden = true
             btn.setTitle("\(numberOfReps)", for: .normal)
-            countDown = 60
+            countDown = 2
             btn.isEnabled = true
             doneBtn.isEnabled = true
         }
@@ -131,4 +166,29 @@ class StartPushUpViewController: UIViewController {
         }
         return list
     }
+
+//MARK: -  - Data Manupulation Methods
+
+func saveProgress(progress : Progression){
+        do{
+            try realm.write{
+                realm.add(progress)
+            }
+        }catch{
+    
+        }
+}
+    
+    func deletePrevProgress(){
+        let prevProgress = realm.objects(Progression.self)
+        do{
+            try realm.write{
+                realm.delete(prevProgress)
+            }
+        }catch{
+            print("error in deleting prev progress")
+        }
+    }
+    
+    
 }

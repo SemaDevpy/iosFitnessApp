@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import RealmSwift
 
 class PushUpInfoViewController: UIViewController {
     
+    
+    let realm = try! Realm()
     
     @IBOutlet weak var weekLabel: UILabel!
     @IBOutlet weak var infoLabel: UIView!
@@ -48,6 +51,7 @@ class PushUpInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadProgress()
         startBtn.applyDesign()
         changeWeekBtn.applyDesign()
         
@@ -70,6 +74,7 @@ class PushUpInfoViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
+        loadProgress()
         setsLabel.text = stringArray()
         totalRepsLabel.text = stringTotal()
         progressBar.progress = setProgress()
@@ -93,6 +98,7 @@ class PushUpInfoViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! StartPushUpViewController
         destinationVC.reps = week
+        destinationVC.totalPushUpsPerDay = stringTotal()
     }
     
     
@@ -135,10 +141,20 @@ class PushUpInfoViewController: UIViewController {
     }
     
     
+    //MARK: - Data Manupulation Methods,READ
+    
+    func loadProgress(){
+        let progress = realm.objects(Progression.self)
+        if let lastSavedProgress = progress.last{
+            weekNum = lastSavedProgress.weekNumber
+            numberOfRepeatOfWeek = lastSavedProgress.numberOfRepeat
+            
+        }
+    }
+    
+    
+    
 }
-
-
-
 
 
 //MARK: - Extending UIprogressView
