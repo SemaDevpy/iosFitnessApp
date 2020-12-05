@@ -10,7 +10,7 @@ import UIKit
 
 class StartPushUpViewController: UIViewController {
     
-    var countDown = 2
+    var countDown = 1
     var timer = Timer()
     
     var reps = [Int]()

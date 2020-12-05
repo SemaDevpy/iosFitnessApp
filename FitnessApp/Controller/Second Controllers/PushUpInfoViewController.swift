@@ -23,9 +23,9 @@ class PushUpInfoViewController: UIViewController {
     
     let workoutProgramm = WorkoutProgramm(weekOne: [20,20,15,15,10], weekTwo: [25,25,20,15,10], weekThree: [30,30,25,20,15], weekFour: [35,30,25,20,15], weekFive: [40,35,25,25,15])
     
-    var weekNum = 4
+    var weekNum = 0
     
-    var numberOfRepeatOfWeek = 2
+    var numberOfRepeatOfWeek = 0
     
     var week : [Int]{
         switch weekNum {
@@ -62,14 +62,23 @@ class PushUpInfoViewController: UIViewController {
         
         weekLabel.text = "Progress for week \(weekNum + 1)"
         
+        
+        
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         setsLabel.text = stringArray()
         totalRepsLabel.text = stringTotal()
-        weekLabel.text = "Progress for week \(weekNum + 1)"
         progressBar.progress = setProgress()
+        
+        if weekNum <= 4{
+            weekLabel.text = "Progress for week \(weekNum + 1)"
+        }else{
+            weekNum = 0
+            weekLabel.text = "Progress for week \(weekNum + 1)"
+        }
+        
     }
     
     
@@ -78,7 +87,7 @@ class PushUpInfoViewController: UIViewController {
         print(numberOfRepeatOfWeek)
         print(week)
         performSegue(withIdentifier: K.trainingSegue, sender: self)
-
+        
     }
     
     
@@ -92,7 +101,7 @@ class PushUpInfoViewController: UIViewController {
     
     @IBAction func unwindSegue(_ sender : UIStoryboardSegue){}
     
-
+    
     
     
     //MARK: - UI Functions
