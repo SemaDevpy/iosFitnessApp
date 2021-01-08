@@ -223,6 +223,9 @@
                                 <state key="normal" title="Statistics">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="6lq-Lz-JaM" kind="show" id="hib-Ua-3dS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deR-3E-0pD">
                                 <rect key="frame" x="20" y="727" width="374" height="50"/>
@@ -404,7 +407,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUJ-K5-nU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2657" y="1625"/>
+            <point key="canvasLocation" x="-2543" y="1625"/>
+        </scene>
+        <!--Statistics-->
+        <scene sceneID="ifP-ak-fFN">
+            <objects>
+                <viewController id="6lq-Lz-JaM" customClass="StatsViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ns-xl-bWP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="c6v-aF-XKH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Statistics" id="6eQ-rI-yXc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o2o-CT-k6S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-867" y="1625"/>
         </scene>
         <!--Start Push Up View Controller-->
         <scene sceneID="NUv-eL-uhU">
@@ -520,7 +539,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAP-1n-1zn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="eef-Sa-knS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-2658" y="2476"/>
+            <point key="canvasLocation" x="-2543" y="2446"/>
         </scene>
         <!--Pull Ups-->
         <scene sceneID="v23-do-nEy">

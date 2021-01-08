@@ -10,6 +10,7 @@
 		29010E6305CFB38275F6D9CD /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42EBD17D37D6B61C9F27DA /* Pods_FitnessApp.framework */; };
 		A2222F262578D53100F0D6D6 /* WorkoutProgramm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2222F252578D53100F0D6D6 /* WorkoutProgramm.swift */; };
 		A2222F4A25790A3F00F0D6D6 /* StartPushUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2222F4925790A3F00F0D6D6 /* StartPushUpViewController.swift */; };
+		A27EF9D025A889F000697FD7 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27EF9CF25A889F000697FD7 /* StatsViewController.swift */; };
 		A2BD0F612577344200201B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F602577344200201B75 /* AppDelegate.swift */; };
 		A2BD0F632577344200201B75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F622577344200201B75 /* SceneDelegate.swift */; };
 		A2BD0F682577344200201B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2BD0F662577344200201B75 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		9D42EBD17D37D6B61C9F27DA /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2222F252578D53100F0D6D6 /* WorkoutProgramm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutProgramm.swift; sourceTree = "<group>"; };
 		A2222F4925790A3F00F0D6D6 /* StartPushUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPushUpViewController.swift; sourceTree = "<group>"; };
+		A27EF9CF25A889F000697FD7 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		A2BD0F5D2577344200201B75 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BD0F602577344200201B75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2BD0F622577344200201B75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,16 @@
 				9D42EBD17D37D6B61C9F27DA /* Pods_FitnessApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A27EF9CE25A889C700697FD7 /* PushUp */ = {
+			isa = PBXGroup;
+			children = (
+				A2BD0F8D2577D2BB00201B75 /* PushUpInfoViewController.swift */,
+				A2222F4925790A3F00F0D6D6 /* StartPushUpViewController.swift */,
+				A27EF9CF25A889F000697FD7 /* StatsViewController.swift */,
+			);
+			path = PushUp;
 			sourceTree = "<group>";
 		};
 		A2BD0F542577344200201B75 = {
@@ -158,8 +170,7 @@
 		A2BD0F8C2577C28700201B75 /* Second Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A2BD0F8D2577D2BB00201B75 /* PushUpInfoViewController.swift */,
-				A2222F4925790A3F00F0D6D6 /* StartPushUpViewController.swift */,
+				A27EF9CE25A889C700697FD7 /* PushUp */,
 			);
 			path = "Second Controllers";
 			sourceTree = "<group>";
@@ -292,6 +303,7 @@
 				A2BD0F892577B86500201B75 /* PushUpViewController.swift in Sources */,
 				A2222F4A25790A3F00F0D6D6 /* StartPushUpViewController.swift in Sources */,
 				A2BD0F8B2577BC7B00201B75 /* SquatsViewController.swift in Sources */,
+				A27EF9D025A889F000697FD7 /* StatsViewController.swift in Sources */,
 				A2BD0F8E2577D2BB00201B75 /* PushUpInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
