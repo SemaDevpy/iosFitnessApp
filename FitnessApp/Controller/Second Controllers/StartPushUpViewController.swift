@@ -62,6 +62,7 @@ class StartPushUpViewController: UIViewController {
                 btn.setTitle("!", for: .normal)
                 statusLbl.text = "Workout is complete"
                 completedBtn.isHidden = false
+                doneBtn.isEnabled = false
             }
         }
     }
@@ -179,16 +180,16 @@ func saveProgress(progress : Progression){
         }
 }
     
-    func deletePrevProgress(){
-        let prevProgress = realm.objects(Progression.self)
-        do{
-            try realm.write{
-                realm.delete(prevProgress)
-            }
-        }catch{
-            print("error in deleting prev progress")
-        }
-    }
+//    func deletePrevProgress(){
+//        let prevProgress = realm.objects(Progression.self)
+//        do{
+//            try realm.write{
+//                realm.delete(prevProgress)
+//            }
+//        }catch{
+//            print("error in deleting prev progress")
+//        }
+//    }
     
     
 }
