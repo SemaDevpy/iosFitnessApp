@@ -12,6 +12,6 @@ import RealmSwift
 class Progression: Object  {
     @objc dynamic var weekNumber : Int = 0
     @objc dynamic var numberOfRepeat  : Int = 0
-    @objc dynamic var date : String = ""
+    @objc dynamic var date : Date = Date()
     @objc dynamic var totalPushUps : Int = 0
 }

@@ -416,14 +416,29 @@
                     <view key="view" contentMode="scaleToFill" id="6ns-xl-bWP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iao-jQ-GxA" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iao-jQ-GxA" firstAttribute="top" secondItem="c6v-aF-XKH" secondAttribute="top" id="HWA-GS-KfX"/>
+                            <constraint firstItem="iao-jQ-GxA" firstAttribute="leading" secondItem="c6v-aF-XKH" secondAttribute="leading" id="RCH-ze-HDf"/>
+                            <constraint firstAttribute="bottom" secondItem="iao-jQ-GxA" secondAttribute="bottom" id="dU9-fT-M6g"/>
+                            <constraint firstItem="iao-jQ-GxA" firstAttribute="trailing" secondItem="c6v-aF-XKH" secondAttribute="trailing" id="l1p-TG-mdm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="c6v-aF-XKH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Statistics" id="6eQ-rI-yXc"/>
+                    <connections>
+                        <outlet property="lineChart" destination="iao-jQ-GxA" id="8Ce-Ax-qPd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o2o-CT-k6S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-867" y="1625"/>
+            <point key="canvasLocation" x="-868.11594202898561" y="1624.5535714285713"/>
         </scene>
         <!--Start Push Up View Controller-->
         <scene sceneID="NUv-eL-uhU">

@@ -102,17 +102,23 @@ class StartPushUpViewController: UIViewController {
         }
         
         
-        let date = Date()
-        let formatter = DateFormatter()
-        formatter.timeZone = .current
-        formatter.locale = .current
-        formatter.dateFormat = "MM/dd/yyyy"
-        let dateString = formatter.string(from: date)
+//        let date = Date()
+//        let formatter = DateFormatter()
+//        formatter.timeZone = .current
+//        formatter.locale = .current
+//        formatter.dateFormat = "MM/dd/yyyy"
+//        let dateString = formatter.string(from: date)
         
         
         //MARK: - Creating new progress or Updating current,CREATE and UPDATE
         //for one day there should be only one note
-        let prevProgressions = realm.objects(Progression.self).filter("date == %@" , dateString)
+        let todayStart = Calendar.current.startOfDay(for: Date())
+        let todayEnd: Date = {
+          let components = DateComponents(day: 1, second: -1)
+          return Calendar.current.date(byAdding: components, to: todayStart)!
+        }()
+        
+        let prevProgressions = realm.objects(Progression.self).filter("date BETWEEN %@", [todayStart, todayEnd])
         if !prevProgressions.isEmpty{
             do{
                 try realm.write{
@@ -126,7 +132,6 @@ class StartPushUpViewController: UIViewController {
         }else{
             let progress = Progression()
             progress.numberOfRepeat = desinationVC.numberOfRepeatOfWeek
-            progress.date = dateString
             progress.weekNumber = desinationVC.weekNum
             progress.totalPushUps = Int(totalPushUpsPerDay)!
             saveProgress(progress: progress)
@@ -176,7 +181,7 @@ func saveProgress(progress : Progression){
                 realm.add(progress)
             }
         }catch{
-    
+             print("error in adding progress\(error)")
         }
 }
     
