@@ -90,15 +90,17 @@ class PushUpInfoViewController: UIViewController {
     
     
     @IBAction func startBtnTapped(_ sender: Any) {
-        performSegue(withIdentifier: K.trainingSegue, sender: self)
+        performSegue(withIdentifier: K.SecondViewControllers.PushUps.trainingSegue, sender: self)
         
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as! StartPushUpViewController
-        destinationVC.reps = week
-        destinationVC.totalPushUpsPerDay = stringTotal()
+        if segue.identifier ==  K.SecondViewControllers.PushUps.trainingSegue{
+            let destinationVC = segue.destination as! StartPushUpViewController
+            destinationVC.reps = week
+            destinationVC.totalPushUpsPerDay = stringTotal()
+        }
     }
     
     

@@ -15,5 +15,16 @@ struct K{
     static let pushUpSegue = "goToPushUps"
     static let dipsSegue = "goToDips"
     static let squatsSegue = "goToSquats"
-    static let trainingSegue = "startTraining"
+    
+    struct SecondViewControllers {
+        struct PushUps {
+            static let changeWeekCell = "changeWeekCell"
+            static let trainingSegue = "startTraining"
+            static let changeWeekSegue = "changeWeek"
+        }
+        
+        
+        
+    }
+    
 }
