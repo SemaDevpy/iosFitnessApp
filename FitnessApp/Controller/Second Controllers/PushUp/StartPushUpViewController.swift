@@ -42,6 +42,7 @@ class StartPushUpViewController: UIViewController {
         numberOfReps = reps[numTracker]
         currentLabel.text = "Current: \(numberOfReps)"
         btn.setTitle("\(numberOfReps)", for: .normal)
+        navigationItem.hidesBackButton = true
         
     }
     
@@ -101,15 +102,6 @@ class StartPushUpViewController: UIViewController {
             
         }
         
-        
-//        let date = Date()
-//        let formatter = DateFormatter()
-//        formatter.timeZone = .current
-//        formatter.locale = .current
-//        formatter.dateFormat = "MM/dd/yyyy"
-//        let dateString = formatter.string(from: date)
-        
-        
         //MARK: - Creating new progress or Updating current,CREATE and UPDATE
         //for one day there should be only one note
         let todayStart = Calendar.current.startOfDay(for: Date())
@@ -133,7 +125,7 @@ class StartPushUpViewController: UIViewController {
             let progress = Progression()
             progress.numberOfRepeat = desinationVC.numberOfRepeatOfWeek
             progress.weekNumber = desinationVC.weekNum
-            progress.totalPushUps = Int(totalPushUpsPerDay)!
+            progress.totalPushUps += Int(totalPushUpsPerDay)!
             saveProgress(progress: progress)
         }
     }
