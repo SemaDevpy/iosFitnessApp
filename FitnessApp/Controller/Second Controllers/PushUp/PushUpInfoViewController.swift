@@ -24,7 +24,7 @@ class PushUpInfoViewController: UIViewController {
     @IBOutlet weak var startBtn: UIButton!
     @IBOutlet weak var changeWeekBtn: UIButton!
     
-    let workoutProgramm = WorkoutProgramm(weekOne: [20,20,15,15,10], weekTwo: [25,25,20,15,10], weekThree: [30,30,25,20,15], weekFour: [35,30,25,20,15], weekFive: [40,35,25,25,15])
+    var workoutProgramm = WorkoutProgramm(weekOne: [20,20,15,15,10], weekTwo: [25,25,20,15,10], weekThree: [30,30,25,20,15], weekFour: [35,30,25,20,15], weekFive: [40,35,25,25,15])
     
     
     var weekNum = 0
@@ -67,9 +67,6 @@ class PushUpInfoViewController: UIViewController {
         
         
         weekLabel.text = "Progress for week \(weekNum + 1)"
-        
-        
-        
     }
     
     
