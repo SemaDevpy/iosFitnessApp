@@ -24,6 +24,7 @@ struct K{
         }
         struct Squats {
             static let trainingSegue = "startTraining"
+            static let changeWeekCell = "changeWeekCell"
         }
         
         

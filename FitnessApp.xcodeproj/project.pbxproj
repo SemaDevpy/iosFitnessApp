@@ -30,6 +30,7 @@
 		A2DA6E0E25B44F93005115B1 /* StartSquatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA6E0D25B44F93005115B1 /* StartSquatsViewController.swift */; };
 		A2DA6E1025B4513C005115B1 /* Squats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA6E0F25B4513C005115B1 /* Squats.swift */; };
 		A2DA6E1225B45495005115B1 /* StatsSquatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA6E1125B45495005115B1 /* StatsSquatsViewController.swift */; };
+		A2DA6E1425B458A6005115B1 /* ChangeWeekSquatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA6E1325B458A6005115B1 /* ChangeWeekSquatsViewController.swift */; };
 		A2E0AB25257B787500B3336F /* PushUps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E0AB24257B787500B3336F /* PushUps.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		A2DA6E0D25B44F93005115B1 /* StartSquatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSquatsViewController.swift; sourceTree = "<group>"; };
 		A2DA6E0F25B4513C005115B1 /* Squats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squats.swift; sourceTree = "<group>"; };
 		A2DA6E1125B45495005115B1 /* StatsSquatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsSquatsViewController.swift; sourceTree = "<group>"; };
+		A2DA6E1325B458A6005115B1 /* ChangeWeekSquatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeWeekSquatsViewController.swift; sourceTree = "<group>"; };
 		A2E0AB24257B787500B3336F /* PushUps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUps.swift; sourceTree = "<group>"; };
 		AA10EB4E2657249E7175D68C /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 				A22F3CFF25B2B7CC00E4DCA8 /* SquatsInfoViewController.swift */,
 				A2DA6E0D25B44F93005115B1 /* StartSquatsViewController.swift */,
 				A2DA6E1125B45495005115B1 /* StatsSquatsViewController.swift */,
+				A2DA6E1325B458A6005115B1 /* ChangeWeekSquatsViewController.swift */,
 			);
 			path = Squats;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				A2BD0F632577344200201B75 /* SceneDelegate.swift in Sources */,
 				A2222F262578D53100F0D6D6 /* WorkoutProgramm.swift in Sources */,
 				A2BD0F8125774A0400201B75 /* MyTableViewCell.swift in Sources */,
+				A2DA6E1425B458A6005115B1 /* ChangeWeekSquatsViewController.swift in Sources */,
 				A2BD0F792577351C00201B75 /* Constants.swift in Sources */,
 				A2DA6E0E25B44F93005115B1 /* StartSquatsViewController.swift in Sources */,
 				A2BD0F8325774AFF00201B75 /* Exercise.swift in Sources */,
