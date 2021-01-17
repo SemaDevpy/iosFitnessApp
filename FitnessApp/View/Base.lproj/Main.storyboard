@@ -560,7 +560,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAP-1n-1zn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="eef-Sa-knS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-5813" y="2417"/>
+            <point key="canvasLocation" x="-5843" y="2395"/>
         </scene>
         <!--Change Week View Controller-->
         <scene sceneID="jX8-JU-ZVI">
@@ -845,11 +845,128 @@
                         <outlet property="startBtn" destination="zY3-eD-HQy" id="uM4-fl-9qA"/>
                         <outlet property="totalRepsLabel" destination="6XC-bo-fuE" id="aBf-rS-9ot"/>
                         <outlet property="weekLabel" destination="lNM-jo-TS3" id="cMz-E2-K2s"/>
+                        <segue destination="ker-TF-k0r" kind="show" identifier="startTraining" id="aFE-GD-qUr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itY-GI-nJj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1323" y="1625"/>
+            <point key="canvasLocation" x="-1984" y="1625"/>
+        </scene>
+        <!--Start Squats View Controller-->
+        <scene sceneID="djL-nC-QxV">
+            <objects>
+                <viewController id="ker-TF-k0r" customClass="StartSquatsViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jPt-dt-S7H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 30 30 20 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ee-lm-nq7">
+                                <rect key="frame" x="20" y="103" width="154.5" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="8pU-We-hPS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obi-xE-hEH">
+                                <rect key="frame" x="47" y="288" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="92R-t4-g97"/>
+                                    <constraint firstAttribute="width" constant="320" id="oWA-C0-gCT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="250"/>
+                                <state key="normal" title="10">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTapped:" destination="ker-TF-k0r" eventType="touchUpInside" id="KcL-bO-PP9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8r-Je-eCL">
+                                <rect key="frame" x="107" y="643" width="200" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="D5x-Jy-vJS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br8-bU-o7N">
+                                <rect key="frame" x="0.0" y="846" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89824694400000005" green="0.77491778140000001" blue="0.71056395770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ytr-ho-cea"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="25"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneBtnTapped:" destination="ker-TF-k0r" eventType="touchUpInside" id="E46-Ep-bXh"/>
+                                    <action selector="startBtnTapped:" destination="wZy-ml-r1S" eventType="touchUpInside" id="lPH-Ac-V2X"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0D-Zp-5IF">
+                                <rect key="frame" x="264" y="103" width="130" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="9eG-9E-vmN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="DnZ-6K-pnN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-bP-08L">
+                                <rect key="frame" x="0.0" y="786" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89824694400000005" green="0.77491778140000001" blue="0.71056395770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vu1-6E-cgW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="25"/>
+                                <state key="normal" title="Completed">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneBtnTapped:" destination="ker-TF-k0r" eventType="touchUpInside" id="Fvj-hT-jpA"/>
+                                    <action selector="startBtnTapped:" destination="wZy-ml-r1S" eventType="touchUpInside" id="TBi-bA-QEU"/>
+                                    <segue destination="bij-PG-vtF" kind="unwind" unwindAction="unwindSegue:" id="Lrn-gD-qax"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D8r-Je-eCL" firstAttribute="centerX" secondItem="jPt-dt-S7H" secondAttribute="centerX" id="0Dg-qr-dRF"/>
+                            <constraint firstItem="obi-xE-hEH" firstAttribute="centerY" secondItem="jPt-dt-S7H" secondAttribute="centerY" id="0VU-c8-CEo"/>
+                            <constraint firstItem="L0D-Zp-5IF" firstAttribute="top" secondItem="Led-Oh-S1n" secondAttribute="top" constant="15" id="6VL-xP-7gf"/>
+                            <constraint firstItem="4Ee-lm-nq7" firstAttribute="leading" secondItem="Led-Oh-S1n" secondAttribute="leading" constant="20" id="Ftj-Lh-d3J"/>
+                            <constraint firstAttribute="bottom" secondItem="br8-bU-o7N" secondAttribute="bottom" id="Mya-cI-s35"/>
+                            <constraint firstItem="i4g-bP-08L" firstAttribute="leading" secondItem="Led-Oh-S1n" secondAttribute="leading" id="NGU-5Z-dZs"/>
+                            <constraint firstItem="obi-xE-hEH" firstAttribute="centerX" secondItem="jPt-dt-S7H" secondAttribute="centerX" id="Oal-UH-1Lb"/>
+                            <constraint firstItem="br8-bU-o7N" firstAttribute="trailing" secondItem="Led-Oh-S1n" secondAttribute="trailing" id="PeI-Cb-eb8"/>
+                            <constraint firstItem="4Ee-lm-nq7" firstAttribute="top" secondItem="Led-Oh-S1n" secondAttribute="top" constant="15" id="QrS-4c-CXl"/>
+                            <constraint firstItem="br8-bU-o7N" firstAttribute="top" secondItem="i4g-bP-08L" secondAttribute="bottom" constant="10" id="iWz-0M-GOf"/>
+                            <constraint firstItem="br8-bU-o7N" firstAttribute="leading" secondItem="Led-Oh-S1n" secondAttribute="leading" id="n2m-kL-xbv"/>
+                            <constraint firstItem="i4g-bP-08L" firstAttribute="trailing" secondItem="Led-Oh-S1n" secondAttribute="trailing" id="p4p-ch-oD3"/>
+                            <constraint firstItem="D8r-Je-eCL" firstAttribute="top" secondItem="obi-xE-hEH" secondAttribute="bottom" constant="35" id="wWN-ov-V2E"/>
+                            <constraint firstItem="Led-Oh-S1n" firstAttribute="trailing" secondItem="L0D-Zp-5IF" secondAttribute="trailing" constant="20" id="xSp-N6-skr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Led-Oh-S1n"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jau-SW-mp3"/>
+                    <connections>
+                        <outlet property="btn" destination="obi-xE-hEH" id="SiS-IE-YW4"/>
+                        <outlet property="completedBtn" destination="i4g-bP-08L" id="Jm5-42-E7a"/>
+                        <outlet property="currentLabel" destination="L0D-Zp-5IF" id="dS0-Gc-7V6"/>
+                        <outlet property="doneBtn" destination="br8-bU-o7N" id="UZf-6D-Zg8"/>
+                        <outlet property="repsLabel" destination="4Ee-lm-nq7" id="rbK-Zj-YKF"/>
+                        <outlet property="statusLbl" destination="D8r-Je-eCL" id="vGu-CA-Leu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cxb-af-W4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="bij-PG-vtF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-2914" y="2395"/>
         </scene>
     </scenes>
     <resources>

@@ -143,7 +143,7 @@ class PushUpInfoViewController: UIViewController {
     //MARK: - Data Manupulation Methods,READ
     
     func loadProgress(){
-        let progress = realm.objects(Progression.self)
+        let progress = realm.objects(PushUps.self)
         if let lastSavedProgress = progress.last{
             weekNum = lastSavedProgress.weekNumber
             numberOfRepeatOfWeek = lastSavedProgress.numberOfRepeat

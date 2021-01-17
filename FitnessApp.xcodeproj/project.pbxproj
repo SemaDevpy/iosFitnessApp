@@ -27,7 +27,9 @@
 		A2BD0F8B2577BC7B00201B75 /* SquatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F8A2577BC7B00201B75 /* SquatsViewController.swift */; };
 		A2BD0F8E2577D2BB00201B75 /* PushUpInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD0F8D2577D2BB00201B75 /* PushUpInfoViewController.swift */; };
 		A2D370C525B18DA5009A9E91 /* ChangeWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D370C425B18DA5009A9E91 /* ChangeWeekViewController.swift */; };
-		A2E0AB25257B787500B3336F /* Progression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E0AB24257B787500B3336F /* Progression.swift */; };
+		A2DA6E0E25B44F93005115B1 /* StartSquatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA6E0D25B44F93005115B1 /* StartSquatsViewController.swift */; };
+		A2DA6E1025B4513C005115B1 /* Squats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA6E0F25B4513C005115B1 /* Squats.swift */; };
+		A2E0AB25257B787500B3336F /* PushUps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E0AB24257B787500B3336F /* PushUps.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +56,9 @@
 		A2BD0F8A2577BC7B00201B75 /* SquatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatsViewController.swift; sourceTree = "<group>"; };
 		A2BD0F8D2577D2BB00201B75 /* PushUpInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpInfoViewController.swift; sourceTree = "<group>"; };
 		A2D370C425B18DA5009A9E91 /* ChangeWeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeWeekViewController.swift; sourceTree = "<group>"; };
-		A2E0AB24257B787500B3336F /* Progression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progression.swift; sourceTree = "<group>"; };
+		A2DA6E0D25B44F93005115B1 /* StartSquatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSquatsViewController.swift; sourceTree = "<group>"; };
+		A2DA6E0F25B4513C005115B1 /* Squats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squats.swift; sourceTree = "<group>"; };
+		A2E0AB24257B787500B3336F /* PushUps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUps.swift; sourceTree = "<group>"; };
 		AA10EB4E2657249E7175D68C /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				A22F3CFF25B2B7CC00E4DCA8 /* SquatsInfoViewController.swift */,
+				A2DA6E0D25B44F93005115B1 /* StartSquatsViewController.swift */,
 			);
 			path = Squats;
 			sourceTree = "<group>";
@@ -166,7 +171,8 @@
 			children = (
 				A2BD0F8225774AFF00201B75 /* Exercise.swift */,
 				A2222F252578D53100F0D6D6 /* WorkoutProgramm.swift */,
-				A2E0AB24257B787500B3336F /* Progression.swift */,
+				A2E0AB24257B787500B3336F /* PushUps.swift */,
+				A2DA6E0F25B4513C005115B1 /* Squats.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,8 +318,9 @@
 				A2222F262578D53100F0D6D6 /* WorkoutProgramm.swift in Sources */,
 				A2BD0F8125774A0400201B75 /* MyTableViewCell.swift in Sources */,
 				A2BD0F792577351C00201B75 /* Constants.swift in Sources */,
+				A2DA6E0E25B44F93005115B1 /* StartSquatsViewController.swift in Sources */,
 				A2BD0F8325774AFF00201B75 /* Exercise.swift in Sources */,
-				A2E0AB25257B787500B3336F /* Progression.swift in Sources */,
+				A2E0AB25257B787500B3336F /* PushUps.swift in Sources */,
 				A2D370C525B18DA5009A9E91 /* ChangeWeekViewController.swift in Sources */,
 				A2BD0F892577B86500201B75 /* PushUpViewController.swift in Sources */,
 				A2222F4A25790A3F00F0D6D6 /* StartPushUpViewController.swift in Sources */,
@@ -321,6 +328,7 @@
 				A2BD0F8B2577BC7B00201B75 /* SquatsViewController.swift in Sources */,
 				A27EF9D025A889F000697FD7 /* StatsViewController.swift in Sources */,
 				A2BD0F8E2577D2BB00201B75 /* PushUpInfoViewController.swift in Sources */,
+				A2DA6E1025B4513C005115B1 /* Squats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

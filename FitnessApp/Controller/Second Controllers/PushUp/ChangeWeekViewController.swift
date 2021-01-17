@@ -68,7 +68,7 @@ extension ChangeWeekViewController : UITableViewDataSource, UITableViewDelegate{
              return Calendar.current.date(byAdding: components, to: todayStart)!
            }()
            
-           let prevProgressions = realm.objects(Progression.self).filter("date BETWEEN %@", [todayStart, todayEnd])
+           let prevProgressions = realm.objects(PushUps.self).filter("date BETWEEN %@", [todayStart, todayEnd])
            if !prevProgressions.isEmpty{
                do{
                    try realm.write{
@@ -81,7 +81,7 @@ extension ChangeWeekViewController : UITableViewDataSource, UITableViewDelegate{
            }else{
                  do {
                          try realm.write{
-                             let progress = Progression()
+                             let progress = PushUps()
                              progress.numberOfRepeat = 0
                              progress.weekNumber = indexPath.row
                              realm.add(progress)

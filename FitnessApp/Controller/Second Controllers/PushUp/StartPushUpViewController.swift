@@ -110,7 +110,7 @@ class StartPushUpViewController: UIViewController {
           return Calendar.current.date(byAdding: components, to: todayStart)!
         }()
         
-        let prevProgressions = realm.objects(Progression.self).filter("date BETWEEN %@", [todayStart, todayEnd])
+        let prevProgressions = realm.objects(PushUps.self).filter("date BETWEEN %@", [todayStart, todayEnd])
         if !prevProgressions.isEmpty{
             do{
                 try realm.write{
@@ -122,7 +122,7 @@ class StartPushUpViewController: UIViewController {
                 print("error in updating\(error)")
             }
         }else{
-            let progress = Progression()
+            let progress = PushUps()
             progress.numberOfRepeat = desinationVC.numberOfRepeatOfWeek
             progress.weekNumber = desinationVC.weekNum
             progress.totalPushUps += Int(totalPushUpsPerDay)!
@@ -167,7 +167,7 @@ class StartPushUpViewController: UIViewController {
 
 //MARK: -  - Data Manupulation Methods
 
-func saveProgress(progress : Progression){
+func saveProgress(progress : PushUps){
         do{
             try realm.write{
                 realm.add(progress)

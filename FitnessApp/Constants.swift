@@ -22,7 +22,9 @@ struct K{
             static let trainingSegue = "startTraining"
             static let changeWeekSegue = "changeWeek"
         }
-        
+        struct Squats {
+            static let trainingSegue = "startTraining"
+        }
         
         
     }

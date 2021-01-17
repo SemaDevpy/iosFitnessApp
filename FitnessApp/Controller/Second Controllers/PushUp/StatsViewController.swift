@@ -59,8 +59,8 @@ class StatsViewController: UIViewController{
     
     
     
-    func getProgressFromDataBase() ->  Results<Progression>{
-        return realm.objects(Progression.self)
+    func getProgressFromDataBase() ->  Results<PushUps>{
+        return realm.objects(PushUps.self)
     }
     
     
