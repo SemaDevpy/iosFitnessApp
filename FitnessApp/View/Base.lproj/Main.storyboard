@@ -162,6 +162,9 @@
                                 <state key="normal" title="Statistics">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="rny-KN-PtV" kind="show" id="Bu4-fp-q9o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlF-BQ-DIa">
                                 <rect key="frame" x="20" y="727" width="374" height="50"/>
@@ -206,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0u-eO-cgz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-662" y="818"/>
+            <point key="canvasLocation" x="-3035" y="672"/>
         </scene>
         <!--Push Ups-->
         <scene sceneID="LT6-ax-uM7">
@@ -272,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKe-O3-MDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1596" y="818"/>
+            <point key="canvasLocation" x="-5197" y="672"/>
         </scene>
         <!--Push Up Info View Controller-->
         <scene sceneID="kbo-qn-hYl">
@@ -413,7 +416,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUJ-K5-nU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4897" y="1625"/>
+            <point key="canvasLocation" x="-6101" y="1625"/>
         </scene>
         <!--Statistics-->
         <scene sceneID="ifP-ak-fFN">
@@ -444,7 +447,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o2o-CT-k6S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3478" y="1625"/>
+            <point key="canvasLocation" x="-4796" y="1625"/>
         </scene>
         <!--Start Push Up View Controller-->
         <scene sceneID="NUv-eL-uhU">
@@ -560,7 +563,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAP-1n-1zn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="eef-Sa-knS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-5843" y="2395"/>
+            <point key="canvasLocation" x="-6883" y="2423"/>
         </scene>
         <!--Change Week View Controller-->
         <scene sceneID="jX8-JU-ZVI">
@@ -621,7 +624,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ps2-vk-QGO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4383" y="2395"/>
+            <point key="canvasLocation" x="-5397" y="2423"/>
         </scene>
         <!--Pull Ups-->
         <scene sceneID="v23-do-nEy">
@@ -850,7 +853,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itY-GI-nJj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1984" y="1625"/>
+            <point key="canvasLocation" x="-3704" y="1625"/>
         </scene>
         <!--Start Squats View Controller-->
         <scene sceneID="djL-nC-QxV">
@@ -966,7 +969,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cxb-af-W4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="bij-PG-vtF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-2914" y="2395"/>
+            <point key="canvasLocation" x="-4028" y="2451"/>
+        </scene>
+        <!--Statistics-->
+        <scene sceneID="PAr-of-AWN">
+            <objects>
+                <viewController id="rny-KN-PtV" customClass="StatsSquatsViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="69A-9L-uq1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukz-Yv-uXO" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ukz-Yv-uXO" secondAttribute="bottom" id="9ap-tK-DLq"/>
+                            <constraint firstItem="Ukz-Yv-uXO" firstAttribute="trailing" secondItem="Gd7-U7-gD0" secondAttribute="trailing" id="QRY-Nm-20o"/>
+                            <constraint firstItem="Ukz-Yv-uXO" firstAttribute="top" secondItem="Gd7-U7-gD0" secondAttribute="top" id="bUp-05-cMP"/>
+                            <constraint firstItem="Ukz-Yv-uXO" firstAttribute="leading" secondItem="Gd7-U7-gD0" secondAttribute="leading" id="ueG-gL-0Ne"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gd7-U7-gD0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Statistics" id="EYU-yy-RQw"/>
+                    <connections>
+                        <outlet property="lineChart" destination="Ukz-Yv-uXO" id="Ahc-eb-SEP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AhI-OX-Enr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2352" y="1625"/>
         </scene>
     </scenes>
     <resources>

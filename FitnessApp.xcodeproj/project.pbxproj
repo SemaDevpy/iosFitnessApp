@@ -29,6 +29,7 @@
 		A2D370C525B18DA5009A9E91 /* ChangeWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D370C425B18DA5009A9E91 /* ChangeWeekViewController.swift */; };
 		A2DA6E0E25B44F93005115B1 /* StartSquatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA6E0D25B44F93005115B1 /* StartSquatsViewController.swift */; };
 		A2DA6E1025B4513C005115B1 /* Squats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA6E0F25B4513C005115B1 /* Squats.swift */; };
+		A2DA6E1225B45495005115B1 /* StatsSquatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA6E1125B45495005115B1 /* StatsSquatsViewController.swift */; };
 		A2E0AB25257B787500B3336F /* PushUps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E0AB24257B787500B3336F /* PushUps.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		A2D370C425B18DA5009A9E91 /* ChangeWeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeWeekViewController.swift; sourceTree = "<group>"; };
 		A2DA6E0D25B44F93005115B1 /* StartSquatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSquatsViewController.swift; sourceTree = "<group>"; };
 		A2DA6E0F25B4513C005115B1 /* Squats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squats.swift; sourceTree = "<group>"; };
+		A2DA6E1125B45495005115B1 /* StatsSquatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsSquatsViewController.swift; sourceTree = "<group>"; };
 		A2E0AB24257B787500B3336F /* PushUps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUps.swift; sourceTree = "<group>"; };
 		AA10EB4E2657249E7175D68C /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 			children = (
 				A22F3CFF25B2B7CC00E4DCA8 /* SquatsInfoViewController.swift */,
 				A2DA6E0D25B44F93005115B1 /* StartSquatsViewController.swift */,
+				A2DA6E1125B45495005115B1 /* StatsSquatsViewController.swift */,
 			);
 			path = Squats;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				A2E0AB25257B787500B3336F /* PushUps.swift in Sources */,
 				A2D370C525B18DA5009A9E91 /* ChangeWeekViewController.swift in Sources */,
 				A2BD0F892577B86500201B75 /* PushUpViewController.swift in Sources */,
+				A2DA6E1225B45495005115B1 /* StatsSquatsViewController.swift in Sources */,
 				A2222F4A25790A3F00F0D6D6 /* StartPushUpViewController.swift in Sources */,
 				A22F3D0025B2B7CC00E4DCA8 /* SquatsInfoViewController.swift in Sources */,
 				A2BD0F8B2577BC7B00201B75 /* SquatsViewController.swift in Sources */,
