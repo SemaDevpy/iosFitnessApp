@@ -15,3 +15,4 @@ class Squats: Object  {
     @objc dynamic var date : Date = Date()
     @objc dynamic var totalSquats : Int = 0
 }
+
