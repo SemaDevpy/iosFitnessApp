@@ -15,22 +15,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="180" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9qk-TU-LVa">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="280" estimatedRowHeight="1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9qk-TU-LVa">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseCell" rowHeight="120" id="cEs-NI-TUN" userLabel="MyTableViewCell" customClass="MyTableViewCell" customModule="FitnessApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseCell" rowHeight="338" id="cEs-NI-TUN" userLabel="MyTableViewCell" customClass="MyTableViewCell" customModule="FitnessApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="338"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cEs-NI-TUN" id="DYU-hn-nTI">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="338"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oZT-kh-zEf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="338"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Ups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMs-gS-hvV">
-                                                    <rect key="frame" x="20" y="75" width="374" height="34"/>
+                                                    <rect key="frame" x="20" y="293" width="374" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="3Lb-Pr-g48"/>
                                                     </constraints>
@@ -74,75 +74,12 @@
                     <connections>
                         <outlet property="tableView" destination="9qk-TU-LVa" id="bcW-D3-LF9"/>
                         <segue destination="m6O-Lb-5ud" kind="show" identifier="goToPushUps" id="bTX-hm-WTT"/>
-                        <segue destination="vAy-kn-E5K" kind="show" identifier="goToDips" id="iRt-8u-w7i"/>
                         <segue destination="4dS-oX-80W" kind="show" identifier="goToSquats" id="NYA-BU-Edc"/>
-                        <segue destination="Khj-KB-0I3" kind="show" identifier="goToPullUps" id="QQO-hg-pcK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qf-Xd-Koz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-177" y="-40"/>
-        </scene>
-        <!--Dips-->
-        <scene sceneID="ttz-OA-QDc">
-            <objects>
-                <viewController id="vAy-kn-E5K" customClass="DipsViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="is1-X3-MyG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5c-hO-NHl">
-                                <rect key="frame" x="20" y="792" width="374" height="50"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="DE3-Gp-oOK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
-                                <state key="normal" title="Statistics">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaB-9C-cr3">
-                                <rect key="frame" x="20" y="727" width="374" height="50"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="RGh-Z8-R4v"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="yUG-l4-IHj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
-                                <state key="normal" title="Training">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dipsssy" translatesAutoresizingMaskIntoConstraints="NO" id="WdR-Wj-uho">
-                                <rect key="frame" x="0.0" y="140" width="414" height="547"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="R5c-hO-NHl" firstAttribute="bottom" secondItem="xXW-D8-JgM" secondAttribute="bottom" constant="-20" id="2qO-HP-kRp"/>
-                            <constraint firstItem="R5c-hO-NHl" firstAttribute="leading" secondItem="xXW-D8-JgM" secondAttribute="leading" constant="20" id="BIq-07-3Yc"/>
-                            <constraint firstItem="NaB-9C-cr3" firstAttribute="top" secondItem="WdR-Wj-uho" secondAttribute="bottom" constant="40" id="EG0-qV-mph"/>
-                            <constraint firstItem="NaB-9C-cr3" firstAttribute="leading" secondItem="xXW-D8-JgM" secondAttribute="leading" constant="20" id="Gxw-Ij-uO2"/>
-                            <constraint firstItem="xXW-D8-JgM" firstAttribute="trailing" secondItem="NaB-9C-cr3" secondAttribute="trailing" constant="20" id="L7E-CX-WCt"/>
-                            <constraint firstItem="xXW-D8-JgM" firstAttribute="trailing" secondItem="R5c-hO-NHl" secondAttribute="trailing" constant="20" id="Ptu-Wg-Cl8"/>
-                            <constraint firstItem="R5c-hO-NHl" firstAttribute="top" secondItem="NaB-9C-cr3" secondAttribute="bottom" constant="15" id="bsh-Ms-veq"/>
-                            <constraint firstItem="WdR-Wj-uho" firstAttribute="top" secondItem="xXW-D8-JgM" secondAttribute="top" id="dfg-NQ-hwO"/>
-                            <constraint firstItem="WdR-Wj-uho" firstAttribute="leading" secondItem="xXW-D8-JgM" secondAttribute="leading" id="yts-F0-I1H"/>
-                            <constraint firstItem="WdR-Wj-uho" firstAttribute="trailing" secondItem="xXW-D8-JgM" secondAttribute="trailing" id="zkG-gz-gKb"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="xXW-D8-JgM"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Dips" id="2jo-Ky-NGJ"/>
-                    <connections>
-                        <outlet property="dipsImage" destination="WdR-Wj-uho" id="8P3-ka-8AH"/>
-                        <outlet property="statisticsButton" destination="R5c-hO-NHl" id="dm3-ab-OJw"/>
-                        <outlet property="trainButton" destination="NaB-9C-cr3" id="7QX-f7-CsO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eV2-cy-K0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="257" y="818"/>
+            <point key="canvasLocation" x="-178.2608695652174" y="-40.178571428571423"/>
         </scene>
         <!--Squats-->
         <scene sceneID="77J-NU-Qaa">
@@ -626,70 +563,6 @@
             </objects>
             <point key="canvasLocation" x="-5397" y="2423"/>
         </scene>
-        <!--Pull Ups-->
-        <scene sceneID="v23-do-nEy">
-            <objects>
-                <viewController id="Khj-KB-0I3" customClass="PullUpViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rHX-k8-mzx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl-doing-pull-ups-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="Xcu-Uk-Cz4">
-                                <rect key="frame" x="0.0" y="140" width="414" height="547"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jli-UD-ner">
-                                <rect key="frame" x="20" y="792" width="374" height="50"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="43l-hL-hxm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="26"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Statistics"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oj1-UW-vBq">
-                                <rect key="frame" x="20" y="727" width="374" height="50"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="NnT-sR-Pls"/>
-                                    <constraint firstAttribute="height" constant="50" id="tHu-b3-vH8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Training"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Xcu-Uk-Cz4" firstAttribute="top" secondItem="5W4-Ln-apI" secondAttribute="top" id="9JB-gc-a1F"/>
-                            <constraint firstItem="Jli-UD-ner" firstAttribute="top" secondItem="Oj1-UW-vBq" secondAttribute="bottom" constant="15" id="Bg9-ea-vkc"/>
-                            <constraint firstItem="Oj1-UW-vBq" firstAttribute="leading" secondItem="5W4-Ln-apI" secondAttribute="leading" constant="20" id="DGz-T9-atP"/>
-                            <constraint firstItem="5W4-Ln-apI" firstAttribute="trailing" secondItem="Jli-UD-ner" secondAttribute="trailing" constant="20" id="EDA-Pm-bge"/>
-                            <constraint firstItem="Jli-UD-ner" firstAttribute="leading" secondItem="5W4-Ln-apI" secondAttribute="leading" constant="20" id="IPV-m6-y1e"/>
-                            <constraint firstItem="Xcu-Uk-Cz4" firstAttribute="trailing" secondItem="5W4-Ln-apI" secondAttribute="trailing" id="TcM-QN-4MN"/>
-                            <constraint firstItem="Xcu-Uk-Cz4" firstAttribute="leading" secondItem="5W4-Ln-apI" secondAttribute="leading" id="XAI-Du-TE9"/>
-                            <constraint firstItem="Xcu-Uk-Cz4" firstAttribute="top" secondItem="5W4-Ln-apI" secondAttribute="top" id="ZFH-6F-i1M"/>
-                            <constraint firstItem="Jli-UD-ner" firstAttribute="bottom" secondItem="5W4-Ln-apI" secondAttribute="bottom" constant="-20" id="bMG-E0-V3p"/>
-                            <constraint firstItem="Xcu-Uk-Cz4" firstAttribute="trailing" secondItem="5W4-Ln-apI" secondAttribute="trailing" id="h4q-54-qPZ"/>
-                            <constraint firstItem="Oj1-UW-vBq" firstAttribute="top" secondItem="Xcu-Uk-Cz4" secondAttribute="bottom" constant="40" id="jGb-gG-PZK"/>
-                            <constraint firstItem="Xcu-Uk-Cz4" firstAttribute="leading" secondItem="5W4-Ln-apI" secondAttribute="leading" id="xOz-Um-G0B"/>
-                            <constraint firstItem="5W4-Ln-apI" firstAttribute="trailing" secondItem="Oj1-UW-vBq" secondAttribute="trailing" constant="20" id="yIY-pz-ci4"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="5W4-Ln-apI"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Pull Ups" id="Y9U-1g-caf">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="cUW-VR-C9B"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="pullUpImage" destination="Xcu-Uk-Cz4" id="nHd-fj-WHJ"/>
-                        <outlet property="statistics" destination="Jli-UD-ner" id="nMp-xT-lAM"/>
-                        <outlet property="train" destination="Oj1-UW-vBq" id="OJO-f3-Jrx"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L3k-A2-6r5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1157" y="818"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="rmr-ak-mkb">
             <objects>
@@ -1068,9 +941,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dipsssy" width="640" height="640"/>
         <image name="girl" width="338" height="397"/>
-        <image name="girl-doing-pull-ups-wallpaper" width="2880" height="3840"/>
         <image name="side-view-man-squatting-on-dark-background_23-2147775428" width="626" height="626"/>
     </resources>
 </document>

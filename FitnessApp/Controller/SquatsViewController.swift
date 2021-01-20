@@ -20,16 +20,24 @@ class SquatsViewController: UIViewController {
         statisticsButton.applyDesign()
         self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
     }
-    
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+//MARK: - Extending buttons functionality
+extension UIButton{
+    func applyDesign(){
+        self.layer.cornerRadius = 15
+        self.layer.shadowColor = UIColor.white.cgColor
+        self.layer.shadowRadius = 5
+        self.layer.shadowOpacity = 0.8
+        self.layer.shadowOffset = CGSize(width: 0, height: 0)
     }
-    */
+}
 
+extension UIImageView{
+    func applyDesignForImage(){
+        self.layer.cornerRadius = 15
+        self.clipsToBounds = true
+        self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+    }
 }

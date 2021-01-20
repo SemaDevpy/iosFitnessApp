@@ -31,15 +31,11 @@ class WelcomeViewController: UIViewController {
     func createArray() -> [Exercise]{
         var tempList : [Exercise] = []
         
-        let exercise1 = Exercise(image: #imageLiteral(resourceName: "PullUps"), title: "Pull Ups")
-        let exercise2 = Exercise(image: #imageLiteral(resourceName: "PushUps"), title: "Push Ups")
-        let exercise3 = Exercise(image: #imageLiteral(resourceName: "Dips"), title: "Dips")
-        let exercise4 = Exercise(image: #imageLiteral(resourceName: "Squats"), title: "Squats")
+        let exercise1 = Exercise(image: #imageLiteral(resourceName: "PushUps"), title: "Push Ups")
+        let exercise2 = Exercise(image: #imageLiteral(resourceName: "Squats"), title: "Squats")
         
         tempList.append(exercise1)
         tempList.append(exercise2)
-        tempList.append(exercise3)
-        tempList.append(exercise4)
         return tempList
     }
 }
@@ -60,11 +56,7 @@ extension WelcomeViewController : UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0{
-            performSegue(withIdentifier: K.pullUpSegue, sender: self)
-        }else if indexPath.row == 1{
             performSegue(withIdentifier: K.pushUpSegue, sender: self)
-        }else if indexPath.row == 2{
-            performSegue(withIdentifier: K.dipsSegue, sender: self)
         }else{
             performSegue(withIdentifier: K.squatsSegue, sender: self)
         }

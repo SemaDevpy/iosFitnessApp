@@ -11,9 +11,7 @@ import Foundation
 
 struct K{
     static let exerciseCell = "ExerciseCell"
-    static let pullUpSegue = "goToPullUps"
     static let pushUpSegue = "goToPushUps"
-    static let dipsSegue = "goToDips"
     static let squatsSegue = "goToSquats"
     
     struct SecondViewControllers {
