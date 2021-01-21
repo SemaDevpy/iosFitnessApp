@@ -13,7 +13,7 @@ class StartSquatsViewController: UIViewController {
 
     let realm = try! Realm()
     
-    var countDown = 2
+    var countDown = 45
     var timer = Timer()
     
     var reps = [Int]()
@@ -146,7 +146,7 @@ class StartSquatsViewController: UIViewController {
                 timer.invalidate()
                 statusLbl.isHidden = true
                 btn.setTitle("\(numberOfReps)", for: .normal)
-                countDown = 2
+                countDown = 45
                 btn.isEnabled = true
                 doneBtn.isEnabled = true
             }
